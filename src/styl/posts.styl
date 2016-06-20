@@ -1,0 +1,134 @@
+.container
+  width 70%
+  position absolute
+  top 0
+  right 0
+  padding-bottom 3.75rem
+  .post
+    position relative
+    margin 0 auto
+    width 80%
+    border-bottom double 7px #49adad
+    padding 3.75rem 0
+    &.single
+      padding 3.75rem 0 0 0
+      border-bottom none
+    .header-post
+      .meta-post
+        time
+          font-size 0.85rem
+      .title-post
+        margin 5px 0 15px 0
+        font-size 2.2rem
+        font-weight 900
+        color #000
+        a
+          color #000
+          transition color 0.2s ease-in-out
+          &:hover
+            color #49adad
+    .img-post
+      display inline-block
+      margin 0
+      width 100%
+      height auto
+      img
+        width 100%
+        height 100%
+    .post-excerpt
+      p
+        font-size 1.1rem
+        line-height 1.65
+        margin-top 15px
+        &:last-child
+          padding 5px 0 25px 0
+          .more
+            display block
+            padding 0.35rem 1.3rem 0.4rem 1rem
+            border-radius 50px
+            border 2px solid #3f413a
+            color #3f413a
+            outline 0
+            float right
+            font-size 1rem
+            font-weight 700
+            line-height 2rem
+            transition border-color 0.2s ease-in-out
+            i
+              position relative
+              left 0.35rem
+              top 0.2rem
+              font-size 1.5rem
+              font-weight 400
+              color #49adad
+            &:hover
+              border-color #49adad
+              i
+                -webkit-animation arrow-bounce 2s infinite
+                -moz-animation arrow-bounce 2s infinite
+                -o-animation arrow-bounce 2s infinite
+                animation arrow-bounce 2s infinite
+    .content-post
+      border-bottom double 7px #49adad
+      padding-bottom 3rem
+      p
+        font-size 1.1rem
+        line-height 1.65
+    .footer-post
+      margin 3rem 0
+      position relative
+      padding 0 3.5rem
+      .author-post
+        display inline-block
+        .avatar
+          display inline-block
+          width 5.9rem
+          height auto
+          margin-right 20px
+          margin-top 10px
+          float left
+          img
+            width 100%
+            height 100%
+            border-radius 50%
+        .bio
+          display inline-block
+          width 275px
+          overflow hidden
+          span
+            font-size 0.85rem
+            font-style italic
+            color #bdc3c7
+          .author-name
+            text-transform uppercase
+            font-weight 900
+            margin 10px 0 8px 0
+            a
+              font-size 1.3rem
+              color #000
+          p
+            margin 0 0 8px 0
+            font-size 0.9rem
+      .share
+        display inline-block
+        float right
+        text-align center
+        margin-top 30px
+        h4
+          text-transform uppercase
+          font-weight 900
+          font-size 1.3rem
+          color #000
+          margin 0 0 12px 0
+        a
+          font-size 1.6rem
+          display inline-block
+        :nth-child(2)
+          color #00b6f1
+        :nth-child(3)
+          color #3a589b
+          margin 0 1rem
+        :last-child
+          color #dd4b39
+    .comments-post
+      margin 0.65rem 0 0 0

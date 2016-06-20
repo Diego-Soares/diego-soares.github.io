@@ -8,9 +8,9 @@ var rename = require('gulp-rename');
 var stylus = require('gulp-stylus');
 
 gulp.task('one', function () {
-  return gulp.src('/src/styl/style.styl')
+  return gulp.src('src/styl/main.styl')
     .pipe(stylus())
-    .pipe(gulp.dest('./css/build'));
+    .pipe(gulp.dest('assets/css'));
 });
 
 gulp.task('styles', function() {
@@ -53,11 +53,11 @@ gulp.task('fonts', function() {
 })
 
 gulp.task('watch', function(){
-	gulp.watch('assets/scss/**/*', ['stylus']);
-	gulp.watch('assets/scss/**/*', ['styles']);
-	gulp.watch('assets/images/*', ['images']);
-	gulp.watch('assets/fonts/*', ['fonts']);
-	gulp.watch('assets/scripts/**/*', ['scripts']);
+	gulp.watch('src/styl/**/*', ['one']);
+	// gulp.watch('assets/scss/**/*', ['styles']);
+	// gulp.watch('assets/images/*', ['images']);
+	// gulp.watch('assets/fonts/*', ['fonts']);
+	// gulp.watch('assets/scripts/**/*', ['scripts']);
 });
 
 gulp.task('default', function() {
