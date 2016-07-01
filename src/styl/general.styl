@@ -18,7 +18,8 @@
       display inline-block
       height 3px
       width 30%
-      background #000
+      background $white
+      margin-top 30px
     .logo
       margin 0
       display inline-block
@@ -34,23 +35,26 @@
       a
         position relative
         top 50%
+        color $white
+        img
+          width 200px
+          border-radius 50%
         h1
           font-size 2.2rem
           margin 1rem 0 0.15rem 0
           text-transform uppercase
           font-weight 900
           padding 0 0.5rem
+          color $white
       p
         font-size 1.2rem
         margin 0
         text-transform uppercase
         font-weight 400
         padding 0 0.5rem
+        color $white
     .bottom
-      position absolute
-      bottom 10px
-      left 0
-      right 0
+      margin-top 20px
       .menu
         list-atyle none
         padding 0
@@ -61,11 +65,20 @@
             a
               bottom 8px
           a
-            color #000
+            color $white
             font-size 2.4rem
             position relative
             bottom 0
             transition bottom 0.3s ease-in-out
+            i.fa-twitter
+              color #1da1f2
+            i.fa-github
+              color #000  
+            i.fa-instagram
+              color #262626
           &:nth-child(2)
             margin 0 1.7rem
+            transition all .2s linear
+            &:hover
+              color #000
 

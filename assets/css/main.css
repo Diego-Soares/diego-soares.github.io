@@ -515,7 +515,7 @@ img {
   opacity: 0.5;
 }
 .masthead {
-  background-color: #e67e22;
+  background-color: #f39c12;
   width: 30%;
   max-height: 100%;
   text-align: center;
@@ -534,7 +534,8 @@ img {
   display: inline-block;
   height: 3px;
   width: 30%;
-  background: #000;
+  background: #fff;
+  margin-top: 30px;
 }
 .masthead .header-wrapper .logo {
   margin: 0;
@@ -552,6 +553,11 @@ img {
 .masthead .header-wrapper .title a {
   position: relative;
   top: 50%;
+  color: #fff;
+}
+.masthead .header-wrapper .title a img {
+  width: 200px;
+  border-radius: 50%;
 }
 .masthead .header-wrapper .title a h1 {
   font-size: 2.2rem;
@@ -559,6 +565,7 @@ img {
   text-transform: uppercase;
   font-weight: 900;
   padding: 0 0.5rem;
+  color: #fff;
 }
 .masthead .header-wrapper .title p {
   font-size: 1.2rem;
@@ -566,12 +573,10 @@ img {
   text-transform: uppercase;
   font-weight: 400;
   padding: 0 0.5rem;
+  color: #fff;
 }
 .masthead .header-wrapper .bottom {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
+  margin-top: 20px;
 }
 .masthead .header-wrapper .bottom .menu {
   list-atyle: none;
@@ -585,14 +590,27 @@ img {
   bottom: 8px;
 }
 .masthead .header-wrapper .bottom .menu li a {
-  color: #000;
+  color: #fff;
   font-size: 2.4rem;
   position: relative;
   bottom: 0;
   transition: bottom 0.3s ease-in-out;
 }
+.masthead .header-wrapper .bottom .menu li a i.fa-twitter {
+  color: #1da1f2;
+}
+.masthead .header-wrapper .bottom .menu li a i.fa-github {
+  color: #000;
+}
+.masthead .header-wrapper .bottom .menu li a i.fa-instagram {
+  color: #262626;
+}
 .masthead .header-wrapper .bottom .menu li:nth-child(2) {
   margin: 0 1.7rem;
+  transition: all 0.2s linear;
+}
+.masthead .header-wrapper .bottom .menu li:nth-child(2):hover {
+  color: #000;
 }
 .container {
   width: 70%;
